@@ -10,7 +10,7 @@
     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 
-    <context:component-scan base-package="com.jcg"/>
+    <context:component-scan base-package="com.myweb"/>
 	
 	
 	
@@ -20,7 +20,7 @@
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://localhost:3306/hibernate" />
+		<property name="url" value="jdbc:mysql://localhost:3306/Homemade" />
 		<property name="username" value="root" />
 		<property name="password" value="" />
 	</bean>
@@ -30,7 +30,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="packagesToScan">
             <list>
-                <value>com.jcg.examples.viewBean</value>
+                <value>com.myweb.homemade.pojo</value>
             </list>
         </property>
         <property name="hibernateProperties">
